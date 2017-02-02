@@ -1,6 +1,4 @@
-var contentTypes    = require('./utils/content-types'),
-    sysInfo         = require('./utils/sys-info'),
-    fs              = require('fs'),
+var fs              = require('fs'),
     env             = process.env,
     express         = require('express'),
     app             = express(),
