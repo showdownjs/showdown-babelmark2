@@ -1,12 +1,46 @@
 {
-  "name": "openshift-cartridge-nodejs-template",
-  "version": "1.0.1",
-  "description": "Custom Node.js cartridge for OpenShift - sample application",
+  "name": "showdown-babelmark2",
+  "version": "0.0.1",
+  "description": "Showdown API for Babelmark2",
+  "license": "MIT",
   "private": true,
+
+  "keywords": [
+    "showdown",
+    "babelmark2"
+  ],
+
+  "author": {
+    "name": "Estevão Soares dos Santos",
+    "url": "https://github.com/tivie"
+  },
+
+  "homepage": "https://github.com/showdownjs/showdown-babelmark2#readme",
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/showdownjs/showdown-babelmark2.git"
+  },
+
+  "bugs": {
+    "url": "https://github.com/showdownjs/showdown-babelmark2/issues"
+  },
+
+  "engines": {
+    "node": "6.9.5",
+    "npm": "4.2.0"
+  },
+
+  "dependencies": {
+    "express": "^4.14.1",
+    "showdown": "^1.x"
+  },
+
+  "devDependencies": {},
+  "bundleDependencies": [],
+
   "main": "start.js",
   "scripts": {
-    "start": "node --use_strict start.js"
-  },
-  "author": "Ionut-Cristian Florescu <ionut.florescu@gmail.com>",
-  "license": "ISC"
+    "start": "supervisor start.js"
+  }
 }
