@@ -1,2 +1,3 @@
  #!/bin/bash
- date >> ${OPENSHIFT_LOG_DIR}/ticktock.log
+ cd $OPENSHIFT_REPO_DIR
+ npm update >> ${OPENSHIFT_LOG_DIR}/npm_update.log
