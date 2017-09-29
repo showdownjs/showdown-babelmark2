@@ -33,15 +33,11 @@
 
   "dependencies": {
     "express": "^4.14.1",
-    "showdown": "^1.x",
-    "supervisor": "^0.12.0"
+    "showdown": "^1.x"
   },
 
   "devDependencies": {},
   "bundleDependencies": [],
 
-  "main": "app.js",
-  "scripts": {
-    "start": "supervisor start.js"
-  }
+  "main": "app.js"
 }
