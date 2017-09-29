@@ -40,7 +40,7 @@
   "devDependencies": {},
   "bundleDependencies": [],
 
-  "main": "start.js",
+  "main": "app.js",
   "scripts": {
     "start": "supervisor start.js"
   }
