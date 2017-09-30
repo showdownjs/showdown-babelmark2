@@ -7,6 +7,8 @@ var fs              = require('fs'),
 
     port            = process.env.PORT || 3000;
 
+app.set('port', port);
+
 app.get('/', function (req, response) {
   response.json({
     title: 'showdown test API',
