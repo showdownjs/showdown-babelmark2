@@ -5,8 +5,7 @@ var fs              = require('fs'),
     showdown        = require('showdown'),
     showdownVersion = JSON.parse(fs.readFileSync('./node_modules/showdown/package.json', 'utf8')).version,
 
-    port            = env.NODE_PORT || 3000,
-    host            = env.NODE_IP || 'localhost';
+    port            = process.env.PORT || 3000;
 
 app.get('/', function (req, response) {
   response.json({
@@ -65,6 +64,6 @@ app.get('/github', function (request, response, next) {
   }
 });
 
-app.listen(port, host, function () {
+app.listen(app.get('port'), function () {
   console.log('Application worker ' + process.pid + ' started on port ' + port + '...');
 });
