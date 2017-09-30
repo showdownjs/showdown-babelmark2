@@ -39,5 +39,9 @@
   "devDependencies": {},
   "bundleDependencies": [],
 
-  "main": "app.js"
+  "main": "app.js",
+	
+	"scripts": {
+    "start": "node app.js"
+  },
 }
